@@ -2,13 +2,13 @@
 
 ## Commands to know
 
-Install dependencies:
-
-### Installation and Start your cluster
+### Installation 
 
 - [minikube start](https://minikube.sigs.k8s.io/docs/start/?arch=%2Fmacos%2Fx86-64%2Fstable%2Fbinary+download)
 
 - [kubectl](https://kubernetes.io/docs/tasks/tools/)
+
+### Start your cluster
 
 ```shell
 minikube start
@@ -66,7 +66,7 @@ kubectl get deploy --all-namespaces
 kubectl get namespace
 ```
 
-## Create pod just for study
+### Create pod just for study
 
 ```shell
 kubectl run nginx-pod --image=nginx:latest --port=80

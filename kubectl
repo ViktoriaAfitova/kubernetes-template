@@ -13,17 +13,24 @@ kubectl get pod --all-namespaces
 kubectl get svc --all-namespaces
 kubectl get namespace
 
-
+# Example for study
+# create pod
 kubectl run nginx-pod --image=nginx:latest --port=80
-
+# create service
 kubectl expose pod nginx-pod --type=NodePort --port=80
-
+# get in browser
 minikube service nginx-pod
-
+# delete pod
 kubectl delete pod/nginx-pod
-
+# delete service
 kubectl delete svc/nginx-pod
 
+# Manifest setup for nginx kinds
+# pod
 kubectl apply -f nginx-pod.yaml
-
+# service
 kubectl apply -f nginx-service.yaml
+# get in browser
+minikube service nginx-service
+
+minicube stop
